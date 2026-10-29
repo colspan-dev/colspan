@@ -1,3 +1,9 @@
+## 0.18.0 (2026-10-29)
+
+### Other
+
+- rename project to Colspan and add the new logo (#75) ([19c283f](https://github.com/colspan-dev/colspan/commit/19c283f32aa53ca96beaea0994e81d6ff781a61f))
+
 ## 0.17.1 (2026-08-24)
 
 ### Bug Fixes
