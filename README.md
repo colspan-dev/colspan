@@ -1,6 +1,9 @@
 <h1 align="center">Colspan</h1>
 <p align="center">Open source drag & drop builder for HTML emails that hold together in every inbox</p>
-<img src="./hero.jpg">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./hero-dark.png">
+  <img src="./hero-light.png" alt="Colspan: open source drag & drop builder for HTML emails">
+</picture>
 
 <p align="center">
   <a href="https://colspan.dev/app">Live Demo</a>

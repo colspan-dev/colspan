@@ -52,7 +52,7 @@ const {
     class="flex items-center justify-between bg-sidebar-accent-foreground px-4 text-secondary"
   >
     <div class="flex items-center">
-      <SvgLogoWhite width="100" />
+      <SvgLogoWhite width="140" />
     </div>
     <!-- <div class="flex items-center justify-center gap-4 dark">
       <ButtonGroup>
