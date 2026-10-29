@@ -1,49 +1,59 @@
-<h1 align="center">MySigMail Card</h1>
-<p align="center">An open source html email template builder with drag & drop editor</p>
-<img src="./hero.jpg">
+<h1 align="center">Colspan</h1>
+<p align="center">Open source drag & drop builder for HTML emails that hold together in every inbox</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./hero-dark.png">
+  <img src="./hero-light.png" alt="Colspan: open source drag & drop builder for HTML emails">
+</picture>
 
 <p align="center">
-  <a href="https://card.mysigmail.com/app">Live Demo</a>
+  <a href="https://colspan.dev/app">Live Demo</a>
   ·
-  <a href="https://github.com/mysigmail/card/releases">Releases</a>
+  <a href="https://colspan.dev">Website</a>
   ·
-  <a href="https://github.com/mysigmail/card/discussions">Discussions</a>
+  <a href="https://github.com/colspan-dev/colspan/releases">Releases</a>
+  ·
+  <a href="https://github.com/colspan-dev/colspan/discussions">Discussions</a>
 </p>
 
-## Motivation
+> Colspan was previously called **MySigMail Card** and lived at `card.mysigmail.com`. Old links redirect here.
 
-We live in an era of increasing vendor lock-in and centralized control. We have seen instances where entire regions are cut off from services due to geopolitical reasons, leaving developers and users stranded. Software should be accessible and reliable, regardless of borders.
+## Why Colspan
 
-Driven by a passion for open source, I want to provide a truly independent alternative. I am releasing the core of my commercial project, [MySigMail Card](https://card.mysigmail.com), to the community to ensure that everyone has access to a powerful, self-hosted email builder. 
+Email layout still runs on tables. Every email developer has fought nested `<table>`s, `colspan` and Outlook quirks. Colspan does that part for you: you assemble an email from ready-made blocks, and it produces table-based HTML with inline styles, built to render consistently across Gmail, Outlook and Apple Mail.
+
+We live in an era of increasing vendor lock-in and centralized control. Entire regions get cut off from services for geopolitical reasons, leaving developers and users stranded. Software should be accessible and reliable regardless of borders. Colspan is the open core of my commercial email builder, released so that everyone has a powerful email editor they can host themselves.
 
 ## Features
 
 - Visual drag-and-drop editor
-- Component catalog with ready-to-use blocks: **Menu**, **Header**, **Content**, **Feature**, **Call to Action**, **E-Commerce**, **Footer**
-- Spot editing with a component tree (`Block -> Row -> Cell -> Atom`)
-- Atom types: `text`, `button`, `divider`, `image`, `menu`
-- JSON export/import from the UI
+- Component catalog with 78 ready-to-use blocks across **Menu**, **Header**, **Content**, **Feature**, **Call to Action**, **E-Commerce**, **Transactional**, and **Footer**
+- Inline editing and a synchronized component tree (`Block -> Row -> Cell -> Atom`)
+- Atom types: `text`, `button`, `divider`, and `image`; Menu and Social are reusable recipes built from the same primitives
+- Rich-text editing with Google Fonts support
+- Desktop and mobile preview with per-row stacking and mobile visibility controls
+- Responsive HTML export and editable JSON export/import from the UI
 - Import modes: `replace` and `append`
 - Template validation + sanitization on import
 - Auto-persist to `localStorage` and hydration on reload
+- Undo and redo
 - Preview rendered in Shadow DOM to isolate editor styles
 
-## Roadmap
+## Self-hosting
 
-The original codebase served well for years, but the web has evolved. I am currently rewriting the core from scratch to leverage modern web standards and architectural patterns. This ensures the project remains performant, maintainable, and easy to extend for years to come. 
+Colspan is a static app: build it and serve `dist/` from any web server.
 
-## Support
+```sh
+pnpm i
+pnpm build
+```
 
-MySigMail Card is an open source project and completely free to use.
+Environment variables (see `.env.example`):
 
-However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support MySigMail Card development via the following methods:
-
-<div align="center">
-
-[![Donate via Open Collective](https://img.shields.io/badge/donate-Open%20Collective-blue.svg?style=popout&logo=opencollective)](https://opencollective.com/mysigmail)
-[![Donate via PayPal](https://img.shields.io/badge/donate-PayPal-blue.svg?style=popout&logo=paypal)](https://paypal.me/antongithub)
-
-</div>
+| Variable | Purpose |
+| --- | --- |
+| `VITE_APP_BASE_PATH` | Base path the app is served from, e.g. `/app/` |
+| `VITE_APP_TELEMETRY` | `true` enables analytics; leave empty for self-hosting |
+| `VITE_APP_YM_ID` | Yandex Metrica counter id, used only with telemetry |
 
 ## Development
 
@@ -51,6 +61,25 @@ However, the amount of effort needed to maintain and develop new features for th
 pnpm i
 pnpm dev
 ```
+
+Run checks with `pnpm lint` and `pnpm test`.
+
+## Roadmap
+
+The original codebase served well for years, but the web has evolved. I am rewriting the core from scratch with modern web standards and architectural patterns, so the project stays fast, maintainable, and easy to extend for years to come.
+
+## Support
+
+Colspan is an open source project and completely free to use.
+
+However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support Colspan development via the following methods:
+
+<div align="center">
+
+[![Donate via Open Collective](https://img.shields.io/badge/donate-Open%20Collective-blue.svg?style=popout&logo=opencollective)](https://opencollective.com/mysigmail)
+[![Donate via PayPal](https://img.shields.io/badge/donate-PayPal-blue.svg?style=popout&logo=paypal)](https://paypal.me/antongithub)
+
+</div>
 
 ## How can I help?
 
@@ -63,7 +92,7 @@ Since the project is undergoing a major rewrite, architectural decisions are sti
 ## Follow
 
 - News and updates on [Twitter](https://twitter.com/mysigmail).
-- [Discussions](https://github.com/mysigmail/card/discussions)
+- [Discussions](https://github.com/colspan-dev/colspan/discussions)
 
 ## Commercial Usage
 

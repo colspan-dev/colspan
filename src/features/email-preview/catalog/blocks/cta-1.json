@@ -57,7 +57,7 @@
                 "id": "mC7J3Pn3",
                 "type": "image",
                 "src": "img/catalog/products/travel-mug.png",
-                "link": "https://card.mysigmail.com/catalog",
+                "link": "https://colspan.dev/catalog",
                 "alt": "Orange insulated travel mug",
                 "width": 92,
                 "spacing": {
@@ -141,7 +141,7 @@
                 "id": "ErHj_IAL",
                 "type": "button",
                 "value": "<span style=\"color:#FFFFFF;font-size:15px\">Add to cart</span>",
-                "link": "https://card.mysigmail.com/start",
+                "link": "https://colspan.dev/start",
                 "backgroundColor": "#FF6B00",
                 "borderRadius": {
                   "topLeft": 10,

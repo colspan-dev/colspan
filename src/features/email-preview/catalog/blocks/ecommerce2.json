@@ -57,7 +57,7 @@
                 "id": "w1pLk6HC",
                 "type": "image",
                 "src": "img/catalog/fashion-travel/check-in-suitcase.png",
-                "link": "https://card.mysigmail.com/features",
+                "link": "https://colspan.dev/features",
                 "alt": "Orange hard-shell check-in suitcase",
                 "width": 280,
                 "spacing": {
@@ -156,7 +156,7 @@
                 "id": "LNx_EYfF",
                 "type": "button",
                 "value": "<span style=\"color:#FFFFFF;font-size:15px\">Choose this case</span>",
-                "link": "https://card.mysigmail.com/start",
+                "link": "https://colspan.dev/start",
                 "backgroundColor": "#FF6B00",
                 "borderRadius": {
                   "topLeft": 10,

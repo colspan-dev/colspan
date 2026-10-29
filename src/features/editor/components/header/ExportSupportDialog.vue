@@ -41,7 +41,7 @@ function onOpenChange(open: boolean) {
       <div class="grid gap-2">
         <Button
           as="a"
-          href="https://github.com/mysigmail/card"
+          href="https://github.com/colspan-dev/colspan"
           target="_blank"
           rel="noopener noreferrer"
           @click="closeExportSupportDialog"

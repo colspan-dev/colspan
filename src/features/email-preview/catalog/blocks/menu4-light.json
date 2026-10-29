@@ -44,7 +44,7 @@
                 "src": "img/system/logos/logo-black.png",
                 "link": "https://example.com",
                 "alt": "Some alt",
-                "width": 110,
+                "width": 150,
                 "spacing": {
                   "margin": [
                     0,

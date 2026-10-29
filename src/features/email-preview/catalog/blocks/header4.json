@@ -62,7 +62,7 @@
                 "id": "s47El-fP",
                 "type": "image",
                 "src": "img/catalog/products/sneaker.png",
-                "link": "https://card.mysigmail.com/start",
+                "link": "https://colspan.dev/start",
                 "alt": "Orange and cream lifestyle sneaker",
                 "width": 310,
                 "spacing": {
@@ -84,7 +84,7 @@
                 "id": "tq4kP3MU",
                 "type": "button",
                 "value": "<span style=\"color:#FFFFFF;font-size:15px\">Shop the pair</span>",
-                "link": "https://card.mysigmail.com/start",
+                "link": "https://colspan.dev/start",
                 "backgroundColor": "#FF6B00",
                 "borderRadius": {
                   "topLeft": 10,
