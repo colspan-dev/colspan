@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    tags: ['@mysigmail/card@*']
+    tags: ['colspan@*']
   workflow_dispatch:
 
 concurrency:
@@ -13,7 +13,9 @@ permissions:
   contents: read
 
 env:
-  APP_DIR: /var/www/card.mysigmail.com/app
+  # The server restricts deploy-card to the app directory with rrsync, which
+  # resolves this path relative to that directory
+  APP_DIR: /
 
 jobs:
   deploy:
@@ -55,7 +57,7 @@ jobs:
             if curl --fail --silent --show-error --location \
               --connect-timeout 5 --max-time 20 \
               --header 'Cache-Control: no-cache' \
-              "https://card.mysigmail.com/app/?deploy=$GITHUB_SHA" \
+              "https://colspan.dev/app/?deploy=$GITHUB_SHA" \
               --output /dev/null; then
               assets_ok=true
 
@@ -63,7 +65,7 @@ jobs:
                 if ! curl --fail --silent --show-error --location \
                   --connect-timeout 5 --max-time 20 \
                   --header 'Cache-Control: no-cache' \
-                  "https://card.mysigmail.com${asset}?deploy=$GITHUB_SHA" \
+                  "https://colspan.dev${asset}?deploy=$GITHUB_SHA" \
                   --output /dev/null; then
                   assets_ok=false
                   break

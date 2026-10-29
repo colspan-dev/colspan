@@ -26,7 +26,7 @@ import {
       as="a"
       size="sm"
       class="mb-1 w-full"
-      href="https://github.com/mysigmail/card"
+      href="https://github.com/colspan-dev/colspan"
       target="_blank"
       rel="noopener noreferrer"
     >

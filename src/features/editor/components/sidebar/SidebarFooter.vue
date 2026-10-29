@@ -11,7 +11,7 @@ const year = new Date().getFullYear()
       v{{ version }}&nbsp;•&nbsp;
       <a
         class="text-muted-foreground"
-        href="https://github.com/mysigmail/card/releases"
+        href="https://github.com/colspan-dev/colspan/releases"
         target="_blank"
         rel="noopener noreferrer"
       >Changelog</a>
